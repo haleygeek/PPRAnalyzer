@@ -1,0 +1,73 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="1788042125" file="C:\Users\haley\Dropbox\Sync Coding Computers\MatLab\PPR Analyzer\PPR Analyzer.prj" location="C:\Users\haley\Dropbox\Sync Coding Computers\MatLab\PPR Analyzer" name="PPR Analyzer" target="target.mlapps" target-name="Package App">
+    <param.appname>PPR Analyzer</param.appname>
+    <param.authnamewatermark>Haley Speed</param.authnamewatermark>
+    <param.email>haleygeek@gmail.com</param.email>
+    <param.company>UT Southwestern</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary>Analyzes Paired Pulse Ratio experiments with PPR Cycles in the order 50ms, 500ms, 100ms, 80ms, 30ms, 200ms.</param.summary>
+    <param.description>Analyzes one group of Paired Pulse Ratio experiments with intervals given in the order 50ms, 500ms, 100ms, 80ms, 30ms, 200ms.  Input is raw data copied from Clampfit .rlt files where 7 sets of cursors measure slopes over Stim 1 and every possible Stim2 (7 columns of data). Outputs the relevant PPR for each sweep, discarding the PPR where there was no fEPSP. Mean PPR, Standard Error, Standard Deviation, and N are calculated for the entire file.</param.description>
+    <param.screenshot />
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>C:\Users\haley\Dropbox\Sync Coding Computers\MatLab\PPR Analyzer</param.output>
+    <param.guid>261986fd-ed62-4363-9102-d086c97b2254</param.guid>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.screenshot />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\PPRAnalyzer.m</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\Analyze.m</file>
+      <file>${PROJECT_ROOT}\GetAvgPPR.m</file>
+      <file>${PROJECT_ROOT}\GetExpLabel.m</file>
+      <file>${PROJECT_ROOT}\GetHeader.m</file>
+      <file>${PROJECT_ROOT}\GetPPR.m</file>
+      <file>${PROJECT_ROOT}\GetSlopes.m</file>
+      <file>${PROJECT_ROOT}\PPRAnalyzer.fig</file>
+      <file>${PROJECT_ROOT}\WriteGroup.m</file>
+    </fileset.depfun>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\help.docx</file>
+      <file>${PROJECT_ROOT}\Template.xls</file>
+      <file>${PROJECT_ROOT}\Test.xls</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\haley\Dropbox\Sync Coding Computers\MatLab" name="PPR Analyzer" optional="false">C:\Users\haley\Dropbox\Sync Coding Computers\MatLab\PPR Analyzer</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2016b</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
